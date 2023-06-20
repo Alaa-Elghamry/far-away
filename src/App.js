@@ -1,3 +1,4 @@
+import {useState  } from "module";
 
 const initialItems = [
   { id: 1, description: "Passports", quantity: 2, packed: false },
@@ -23,7 +24,7 @@ function Logo() {
 }
 function Form() {
 
-const [de , setDescription] = useState();
+const [description , setDescription] = useState('');
 
   function handleSubmit(e) {
     e.preventDefault();
